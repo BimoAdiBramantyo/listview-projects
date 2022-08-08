@@ -12,24 +12,24 @@ class listview extends StatefulWidget {
 class _listviewState extends State<listview> {
 
   List<NameModel> data = [
-    NameModel("Adhanafi Ilyas", "AI", "Pengembang Perangkat Lunak Dan Gim"),
-    NameModel("Ahmad Aziz", "AA", "Pengembang Perangkat Lunak Dan Gim"),
-    NameModel("Akbar Rizqullah", "AR", "Pengembang Perangkat Lunak Dan Gim"),
-    NameModel("Alwan Athallah", "AA", "Pengembang Perangkat Lunak Dan Gim"),
-    NameModel("Amri Iqra", "AI", "Pengembang Perangkat Lunak Dan Gim"),
-    NameModel("Sejati Adli", "SA", "Pengembang Perangkat Lunak Dan Gim"),
-    NameModel("Andika Setya", "AS", "Pengembang Perangkat Lunak Dan Gim"),
-    NameModel("Antariksa Kusuma", "AK", "Pengembang Perangkat Lunak Dan Gim"),
-    NameModel("Azzra Rienov", "AR", "Pengembang Perangkat Lunak Dan Gim"),
-    NameModel("Bayu Septian", "BS", "Pengembang Perangkat Lunak Dan Gim"),
-    NameModel("Bhre Nabil", "BN", "Pengembang Perangkat Lunak Dan Gim"),
-    NameModel("Bimo Adi", "BA", "Pengembang Perangkat Lunak Dan Gim"),
-    NameModel("Daffa Syauqi", "DS", "Pengembang Perangkat Lunak Dan Gim"),
-    NameModel("Danar Gading", "DG", "Pengembang Perangkat Lunak Dan Gim"),
-    NameModel("Dimas Bagus", "DB", "Pengembang Perangkat Lunak Dan Gim"),
-    NameModel("Firdaus Hafidz", "FH", "Pengembang Perangkat Lunak Dan Gim"),
-    NameModel("Hegel Al Rafli", "HAR", "Pengembang Perangkat Lunak Dan Gim"),
-    NameModel("Hibatullah Fawwaz", "HF", "Pengembang Perangkat Lunak Dan Gim"),
+    NameModel("Adhanafi Ilyas", "AI",  "Absen: 01", "Pengembangan Perangkat Lunak Dan Gim"),
+    NameModel("Ahmad Aziz", "AA", "Absen: 02","Pengembangan Perangkat Lunak Dan Gim"),
+    NameModel("Akbar Rizqullah", "AR", "Absen: 03","Pengembangan Perangkat Lunak Dan Gim"),
+    NameModel("Alwan Athallah", "AA", "Absen: 04","Pengembangan Perangkat Lunak Dan Gim"),
+    NameModel("Amri Iqra", "AI", "Absen: 05","Pengembangan Perangkat Lunak Dan Gim"),
+    NameModel("Sejati Adli", "SA", "Absen: 06","Pengembangan Perangkat Lunak Dan Gim"),
+    NameModel("Andika Setya", "AS", "Absen: 07","Pengembangan Perangkat Lunak Dan Gim"),
+    NameModel("Antariksa Kusuma", "AK", "Absen: 08","Pengembangan Perangkat Lunak Dan Gim"),
+    NameModel("Azzra Rienov", "AR", "Absen: 09","Pengembangan Perangkat Lunak Dan Gim"),
+    NameModel("Bayu Septian", "BS", "Absen: 10","Pengembangan Perangkat Lunak Dan Gim"),
+    NameModel("Bhre Nabil", "BN", "Absen: 11","Pengembangan Perangkat Lunak Dan Gim"),
+    NameModel("Bimo Adi", "BA", "Absen: 12","Pengembangan Perangkat Lunak Dan Gim"),
+    NameModel("Daffa Syauqi", "DS", "Absen: 13","Pengembangan Perangkat Lunak Dan Gim"),
+    NameModel("Danar Gading", "DG", "Absen: 14","Pengembangan Perangkat Lunak Dan Gim"),
+    NameModel("Dimas Bagus", "DB", "Absen: 15","Pengembangan Perangkat Lunak Dan Gim"),
+    NameModel("Firdaus Hafidz", "FH", "Absen: 16","Pengembangan Perangkat Lunak Dan Gim"),
+    NameModel("Hegel Al Rafli", "HAR", "Absen: 17","Pengembangan Perangkat Lunak Dan Gim"),
+    NameModel("Hibatullah Fawwaz", "HF", "Absen: 18","Pengembangan Perangkat Lunak Dan Gim"),
   ];
 
   Widget avatar(int index){
@@ -58,6 +58,10 @@ class _listviewState extends State<listview> {
             margin: EdgeInsets.only(top: 2),
             child: Text(data[index].jurusan.toString()),
           ),
+          Container(
+            margin: EdgeInsets.only(top: 2),
+            child: Text(data[index].absen.toString()),
+          )
         ],
       ),
     ));
